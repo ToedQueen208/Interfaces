@@ -8,5 +8,6 @@ namespace Interfaces
 {
     internal interface IFly
     {
+        void Fly();
     }
 }

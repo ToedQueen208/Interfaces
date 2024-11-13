@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Interfaces
 {
-    internal class IHunt
+    internal interface IHunt
     {
+        void Hunt();
+
     }
 }

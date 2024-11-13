@@ -6,27 +6,26 @@ using System.Threading.Tasks;
 
 namespace Interfaces
 {
-    internal class Penguin : Bird, IHunt, ISwim
+    internal class Goose : Bird, IFly, ISwim
     {
-        public Penguin(float weight): base(weight)
+        public Goose(float weight) : base(weight) 
         {
+
         }
 
-        public void Move()
-        {
-            Console.WriteLine("Penguin is moving!");
-        }
         public override void MakeSound()
         {
-            Console.WriteLine(this.GetType().Name + " squawks!");
+            Console.WriteLine(this.GetType().Name + " HONKS!");
         }
-        public void Hunt()
+        public void Fly()
         {
-            Console.WriteLine(this.GetType().Name + " is hunting in the water");
+            Console.WriteLine(this.GetType().Name + " is flying");
         }
+
         public void Swim()
         {
             Console.WriteLine(this.GetType().Name + " is swimming");
         }
+
     }
 }

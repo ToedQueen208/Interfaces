@@ -8,5 +8,7 @@ namespace Interfaces
 {
     internal interface ISwim
     {
+
+        void Swim();
     }
 }
