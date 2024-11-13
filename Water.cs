@@ -9,6 +9,14 @@ namespace Interfaces
     public class Water : SafariEnvironment<ISwim>
     {
         public override void CheckAnimalsInEnvironment()
-        { }
+        {
+            foreach (Animal animal in this.animalsInEnvironment)
+            {
+                if (animal is ISwim swimmingAnimal)
+                {
+                    swimmingAnimal.Swim();
+                }
+            }
+        }
     }
 }

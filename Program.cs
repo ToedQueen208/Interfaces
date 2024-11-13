@@ -39,6 +39,34 @@
             sky.AddAnimalInEnvironment(jeff);
 
             sky.CheckAnimalsInEnvironment();
+
+            Water water = new Water();
+            water.AddAnimalInEnvironment(penny);
+            water.AddAnimalInEnvironment(jeff);
+
+            water.CheckAnimalsInEnvironment();
+
+            HuntingGround huntingGround = new HuntingGround();
+
+            huntingGround.AddAnimalInEnvironment(penny);
+            huntingGround.AddAnimalInEnvironment(fluffy);
+            huntingGround.AddAnimalInEnvironment(betty);
+            //   huntingGround.AddAnimalInEnvironment(jeff);  jeff cant hunt but can go into the huntingground???
+
+            huntingGround.CheckAnimalsInEnvironment();
+            List<Animal> animals = new List<Animal>()
+             { fluffy, penny, jeff, betty };
+            CompareWeight compareWeight = new CompareWeight(false);
+
+            animals.Sort(compareWeight);
+
+
+            foreach (var animal in animals)
+            {
+                Console.WriteLine(animal.GetType().Name + animal.Weight.ToString());
+            }
+
+
         }
     }
 }
