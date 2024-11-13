@@ -5,11 +5,14 @@
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
-            PatheraBigCat lenny = new PatheraBigCat(50);
+            Tiger fluffy = new Tiger(70.5f);
+            Penguin penny = new Penguin(21);
 
+            fluffy.Move();
+            penny.Move();
 
-            lenny.MakeSound();
+            fluffy.MakeSound();
+            penny.MakeSound();
 
         }
     }

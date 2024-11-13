@@ -14,7 +14,7 @@ namespace Interfaces
         
         }
 
-        public override void MakeSound()
+        public override sealed void MakeSound()
         {
             Console.WriteLine(this.GetType().Name + " roars!");
         }
