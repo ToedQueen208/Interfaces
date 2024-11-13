@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Interfaces
 {
-    internal abstract class Animal
+    public abstract class Animal
     {
         public float Weight { get; set; }
 

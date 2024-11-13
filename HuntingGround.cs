@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Interfaces
 {
-    public interface IHunt
+    public class HuntingGround : SafariEnvironment<IHunt>
     {
-        void Hunt();
-
+        public override void CheckAnimalsInEnvironment()
+        { }
     }
 }

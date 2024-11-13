@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Interfaces
 {
-    internal interface IFly
+    public interface IFly
     {
         void Fly();
     }
