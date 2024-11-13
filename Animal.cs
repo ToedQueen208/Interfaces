@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Interfaces
 {
-    public abstract class Animal
+    public abstract class Animal //: IComparable
     {
         public float Weight { get; set; }
 
@@ -16,6 +16,12 @@ namespace Interfaces
         }
 
         public abstract void MakeSound();
+
+        //public int CompareTo(Object obj)
+        //{
+        //    int position = -(int)(this.Weight - ((Animal)obj).Weight);
+        //    return position;
+        //}
         
 
         

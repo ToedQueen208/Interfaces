@@ -66,7 +66,21 @@
                 Console.WriteLine(animal.GetType().Name + animal.Weight.ToString());
             }
 
+            IFormatProvider German = new System.Globalization.CultureInfo("de-DE");
+            IFormatProvider French = new System.Globalization.CultureInfo("fr-FR");
+            IFormatProvider English = new System.Globalization.CultureInfo("en-GB");
 
+
+            foreach (var animal in animals)
+            {
+                WeightFormatter testFormat = new WeightFormatter(animal);
+                Console.WriteLine(testFormat.ToString("Kilograms", German));
+                Console.WriteLine(testFormat.ToString("oUnCes", French));
+                Console.WriteLine(testFormat.ToString("stone", English));
+            }
+
+            WeightFormatter jeffFormat = new WeightFormatter(jeff);
+            jeffFormat.Help();
         }
     }
 }
